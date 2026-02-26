@@ -87,6 +87,10 @@ function App() {
             <button className="launch-button" onClick={handleLaunch}>
               Launch Now
             </button>
+            <div className="powered-by">
+              <span>Powered by</span>
+              <img src="/hippo.jpg" alt="Hippo Logo" className="hippo-logo" />
+            </div>
           </div>
         )}
         
