@@ -1,0 +1,145 @@
+.curtain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 50;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.curtain {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #4a0000 0%,
+    #8b0000 10%,
+    #b22222 25%,
+    #8b0000 40%,
+    #4a0000 55%,
+    #8b0000 70%,
+    #b22222 85%,
+    #4a0000 100%
+  );
+  background-size: 20% 100%;
+  transition: transform 3.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  pointer-events: auto;
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.curtain-left {
+  transform-origin: left;
+  border-right: 3px solid rgba(212, 175, 55, 0.5);
+}
+
+.curtain-right {
+  transform-origin: right;
+  border-left: 3px solid rgba(212, 175, 55, 0.5);
+}
+
+.curtains-open .curtain-left {
+  transform: translateX(-105%) skewX(-5deg);
+}
+
+.curtains-open .curtain-right {
+  transform: translateX(105%) skewX(5deg);
+}
+
+.ui-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.logo-crop-container {
+  width: 220px;
+  height: 80px;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+  padding: 5px;
+}
+
+.vaji-logo {
+  width: 200px;
+  height: 200px;
+  transform: scale(1.3);
+  object-fit: contain;
+}
+
+.launch-button {
+  padding: 25px 60px;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  background: radial-gradient(circle at center, #f1c40f, #d4af37);
+  color: #000;
+  border: 2px solid #fff;
+  border-radius: 60px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px rgba(241, 196, 15, 0.5);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+/* Premium Countdown Specifics */
+.countdown-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+.countdown-number {
+  font-size: 15rem;
+  font-weight: 900;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  animation: countdown-tick 1s ease-out forwards;
+  z-index: 2;
+}
+
+@keyframes countdown-tick {
+  0% { transform: scale(0.5); opacity: 0; }
+  20% { transform: scale(1.1); opacity: 1; }
+  80% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 10;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
