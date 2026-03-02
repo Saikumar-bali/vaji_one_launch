@@ -65,7 +65,7 @@ function App() {
       <div className="video-container">
         <video 
           ref={videoRef}
-          src="/videoplayback.mp4" 
+          src="https://pub-66827fd44aa7471894db5e94943315c9.r2.dev/vaji_news_video.mp4" 
           playsInline
         />
       </div>
@@ -79,7 +79,7 @@ function App() {
         {state === 'idle' && (
           <div className="entrance-anim">
             <div className="logo-crop-container">
-              <img src="/Vaji-Logo-GIF.gif" alt="Vaji Logo" className="vaji-logo" />
+              <img src="https://res.cloudinary.com/difnne9e6/image/upload/v1772429489/Vaji-Logo-GIF_d3gqbi.gif" alt="Vaji Logo" className="vaji-logo" />
             </div>
             <h1 style={{ color: '#d4af37', marginBottom: '2rem', fontSize: '3rem', textShadow: '2px 2px 4px #000', fontFamily: 'serif' }}>
               Grand Inauguration
@@ -89,7 +89,7 @@ function App() {
             </button>
             <div className="powered-by">
               <span>Powered by</span>
-              <img src="/hippo.jpg" alt="Hippo Logo" className="hippo-logo" />
+              <img src="https://res.cloudinary.com/difnne9e6/image/upload/v1772429487/hippo_ojx7bt.jpg" alt="Hippo Logo" className="hippo-logo" />
             </div>
           </div>
         )}
