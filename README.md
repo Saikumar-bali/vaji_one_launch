@@ -1,16 +1,55 @@
-# React + Vite
+# 🚀 Vaji Grand Inauguration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stunning launch website for Vaji's grand inauguration featuring an elegant countdown, confetti celebrations, and cinematic curtain reveal animations.
 
-Currently, two official plugins are available:
+![Vaji Launch](https://pub-66827fd44aa7471894db5e94943315c9.r2.dev/vaji_preview.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Elegant Countdown Timer** - 10-second countdown with premium SVG stroke animations
+- **Confetti Celebration** - Dynamic confetti burst on launch
+- **Cinematic Curtain Reveal** - Theater-style curtain opening animation
+- **Video Showcase** - Full-screen video playback on launch
+- **Premium Design** - Gold accents, elegant typography, smooth transitions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **canvas-confetti** - Confetti animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Live Demo
+
+🌐 **Live URL**: [https://vaji-one-launch.onrender.com](https://vaji-one-launch.onrender.com)
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Saikumar-bali/vaji_one_launch.git
+
+# Navigate to project directory
+cd vaji_one_launch
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 🏗️ Build
+
+```bash
+# Build for production
+npm run build
+```
+
+## 📝 License
+
+MIT License - feel free to use this project for your own launches!
+
+---
+
+Made with ❤️ by [Vaji](https://vaji-one-launch.onrender.com)
